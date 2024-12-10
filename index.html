@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <!-- *****************************Navbar start*******************************************  -->
+ <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <div class="logo-img">
+                <img class="w-100" src="/imgs/imgs1.png" alt="logo" >
+            </div>
+            <div>
+                <a class="navbar-brand" href="#">Weather</a>
+                <p class="navbar-text">tagline goes here</p>
+            </div>
+        </div>
+        
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill active" href="#" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link rounded-pill" href="#">News</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link rounded-pill" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link rounded-pill" href="#">Photos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link rounded-pill" href="#">Contacts</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!----------------------------- end navbar -------------------------------->
+
+<!----------------------------- start Home -------------------------------->
+<section id="home" class="home py-1">
+    
+    <div class="container mt-5 py-4">
+        <div class="row g-3">
+            <div class="position-relative mb-5">
+                <input id="inputLocation" class="form-control rounded-pill text-white" type="text"
+                    placeholder="Find your location...">
+                <button id="FindBtn" class="btn position-absolute rounded-pill">Find</button>
+            </div>
+            <div class="col-lg-4">
+                <div class="weather-card">
+                    <div id="mainHeader" class="d-flex justify-content-between p-2">
+                        <h4 id="currentDay">Thursday</h4>
+                        <h4 id="currentDate">4January</h4>
+                    </div>
+                    <h3 id="cityName" class="ps-4 mt-2">Cairo</h3>
+                    <div id="mainContent" class=" d-flex justify-content-between align-items-center px-4">
+                        <div>
+                            <p id="temp">17<span id="dgree" class="position-relative">o</span>C</p>
+                        </div>
+                        <div>
+                            <img id="tempIcon" class="mainContent-icon" src="/imgs/imgs3.png" alt="">
+                        </div>
+                    </div>
+                    <div id="firstFooter" class="ps-4" >
+                        <p id="text">clear</p>
+                    </div>
+                    <div id="secondFooter" class="p-4">
+                        <img class="weather-icon" src="/imgs/imgs4.png" alt="">
+                        <span class="mr-2 text-white opacity-75">20%</span>
+                        <img class="weather-icon" src="/imgs/imgs5.png" alt="">
+                        <span class="mr-2 text-white opacity-75">18km/h</span>
+                        <img class="weather-icon" src="/imgs/imgs6.png" alt="">
+                        <span class="mr-2 text-white opacity-75">East</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="weather-card-two">
+                    <div id="secondHeader" class="d-flex justify-content-center p-2">
+                        <h4 id="nextDay">Saturday</h4>
+                    </div>
+                    <img id="nextTempIcon" class="d-block mx-auto mt-4 mb-3" src="/imgs/imgs7.png" alt="">
+                        <div class="text-center">
+                            <p id="secondTempBig" class="bigDegree">23.3<span class="position-relative sec-dgree">o</span>C</pd>
+                            <p id="secondTempsmall" class="smallDegree">14.2<span class="position-relative third-dgree">o</span></p>
+                        </div>
+                    <div id="firstFooter" class="text-center" >
+                        <p id="secondText">Sunny</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="weather-card-three">
+                    <div id="thirdHeader" class="d-flex justify-content-center p-2">
+                        <h4 id="comingDay">Sunday</h4>
+                    </div>
+                    <img id="thirdIcon" class="d-block mx-auto mt-4 mb-3" src="/imgs/imgs8.png" alt="">
+                        <div class="text-center">
+                            <p id="thirdTempBig" class="bigDegree">23.3<span class="position-relative sec-dgree">o</span>C</pd>
+                            <p id="thirdTempsmall" class="smallDegree">14.2<span class="position-relative third-dgree">o</span></p>
+                        </div>
+                    <div id="firstFooter" class="text-center" >
+                        <p id="thidText">Sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------- end Home ---------------------------------->
+
+<!----------------------------- start Footer ------------------------------>
+<footer class="footer p-1">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="position-relative mb-5 w-md-50">
+                    <input id="inputsubscribe" class="form-control rounded-pill text-white" type="text"
+                        placeholder="Enter your email to subscribe...">
+                    <button id="subBtn" class="btn position-absolute rounded-pill">Subscribe</button>
+                    <p class="text-white mt-4">Copyright 2024 Company name. Implemented by Yassein. All rights reserved</p>
+                </div>
+                <div class="d-flex me-5 pe-5 ">
+                    <a href="#" class="icons-container">
+                        <i class="fa-brands fa-facebook-f icons"></i>
+                    </a>
+                    <a href="#" class="icons-container">
+                        <i class="fa-brands fa-twitter icons"></i>
+                    </a>
+                    <a href="#" class="icons-container">
+                        <i class="fa-brands fa-google icons"></i>
+                    </a>
+                    <a href="#" class="icons-container">
+                        <i class="fa-brands fa-pinterest icons"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+      <script src="js/index.js"></script>
+</body>
+</html>      
